@@ -8,6 +8,10 @@ export const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const customerArea = () =>{
+    
+  }
+
   return (
     <header className="bg-opacity-80 backdrop-blur-md border-b border-[#00FFCC30] sticky top-0 z-50" style={{ background: COLORS.backgroundSecondary }}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -33,13 +37,10 @@ export const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <a
-            href="/contato"
-            className="bg-[#00FFCC] text-[#121212] px-4 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
-            style={{ boxShadow: '0 0 15px rgba(0, 255, 204, 0.7)' }}
-          >
-            Fale Conosco
-          </a>
+          <button className="bg-[#00FFCC] text-[#303030] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
+          onClick={customerArea}>
+            Área do cliente
+          </button>
         </nav>
 
         {/* Mobile Menu Button */}

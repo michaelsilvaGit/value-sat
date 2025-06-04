@@ -61,9 +61,9 @@ export const SPACING = {
 
 export const NAVIGATION_LINKS = [
   { name: 'Home', path: '/' },
-  { name: 'Produtos', path: '/produtos' },
-  { name: 'Sobre', path: '/sobre' },
-  { name: 'Contato', path: '/contato' },
+  { name: 'Produtos', path: '#/produtos' },
+  { name: 'Sobre', path: '#/sobre' },
+  { name: 'Contato', path: '#/contato' },
 ];
 
 export const COMPANY_INFO = {
@@ -72,11 +72,15 @@ export const COMPANY_INFO = {
   description: 'Segurança e tecnologia para seu veículo, com monitoramento em tempo real e alertas instantâneos.',
   phone: '(11) 9999-9999',
   email: 'contato@rastreauto.com.br',
-  address: 'Av. Paulista, 1000 - São Paulo, SP',
+  address: 'Av. Ipanema, nº 1855 - Quadra 92 Lote 12',
   socialMedia: {
     facebook: 'https://facebook.com/rastreauto',
     instagram: 'https://instagram.com/rastreauto',
     twitter: 'https://twitter.com/rastreauto',
   },
-  copyright: `© ${new Date().getFullYear()} RastreAuto. Todos os direitos reservados.`,
+  copyright: `© ${new Date().getFullYear()} Value Sat. Todos os direitos reservados.`,
 };
+
+export const DEVELOPED = {
+  developed: 'Michael Silva'
+}

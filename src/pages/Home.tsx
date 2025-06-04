@@ -3,7 +3,6 @@ import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import Button from '../components/ui/Button';
 import { COLORS, GRADIENTS } from '../lib/constants';
-import ImageCarousel from '@/components/ui/ImageCarousel';
 import VideoBackground from '@/components/ui/ImageCarousel';
 
 export const Home = () => {
@@ -277,6 +276,53 @@ export const Home = () => {
             </div>
 
             {/* Depoimento 3 */}
+            <div className="bg-[rgba(30,30,47,0.7)] backdrop-blur-md rounded-lg shadow-md p-6 border border-[#00FFCC30] hover:shadow-[0_0_15px_rgba(0,255,204,0.5)] transition-all duration-300 transform hover:translate-y-[-5px]">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-[#3D0099] rounded-full mr-4 flex items-center justify-center text-[#00FFCC] font-bold">RM</div>
+                <div>
+                  <h4 className="font-semibold text-white">Roberto Mendes</h4>
+                  <p className="text-sm text-[#00FFCC]">Gestor de Frota</p>
+                </div>
+              </div>
+              <div className="mb-4 text-[#00FFCC] text-4xl" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>"</div>
+              <p className="text-gray-300 italic mb-4">
+                Gerencio uma frota de 15 veículos e o sistema da RastreAuto facilitou muito meu trabalho. Consigo monitorar todos os veículos em tempo real e otimizar rotas.
+              </p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            {/* Depoimento 4 */}
+            <div className="bg-[rgba(30,30,47,0.7)] backdrop-blur-md rounded-lg shadow-md p-6 border border-[#00FFCC30] hover:shadow-[0_0_15px_rgba(0,255,204,0.5)] transition-all duration-300 transform hover:translate-y-[-5px]">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-[#3D0099] rounded-full mr-4 flex items-center justify-center text-[#00FFCC] font-bold">CS</div>
+                <div>
+                  <h4 className="font-semibold text-white">Carlos Silva</h4>
+                  <p className="text-sm text-[#00FFCC]">Motorista de Aplicativo</p>
+                </div>
+              </div>
+              <div className="mb-4 text-[#00FFCC] text-4xl" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>"</div>
+              <p className="text-gray-300 italic mb-4">
+                Desde que instalei o rastreador da RastreAuto, me sinto muito mais seguro durante meu trabalho. O aplicativo é muito fácil de usar e o suporte é excelente.
+              </p>
+            </div>
+
+            {/* Depoimento 5 */}
+            <div className="bg-[rgba(30,30,47,0.7)] backdrop-blur-md rounded-lg shadow-md p-6 border border-[#00FFCC30] hover:shadow-[0_0_15px_rgba(0,255,204,0.5)] transition-all duration-300 transform hover:translate-y-[-5px]">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-[#3D0099] rounded-full mr-4 flex items-center justify-center text-[#00FFCC] font-bold">AO</div>
+                <div>
+                  <h4 className="font-semibold text-white">Ana Oliveira</h4>
+                  <p className="text-sm text-[#00FFCC]">Proprietária de Veículo</p>
+                </div>
+              </div>
+              <div className="mb-4 text-[#00FFCC] text-4xl" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>"</div>
+              <p className="text-gray-300 italic mb-4">
+                Meu carro foi roubado e graças ao rastreador da RastreAuto, foi recuperado em menos de 24 horas. Um investimento que realmente vale a pena!
+              </p>
+            </div>
+
+            {/* Depoimento 6 */}
             <div className="bg-[rgba(30,30,47,0.7)] backdrop-blur-md rounded-lg shadow-md p-6 border border-[#00FFCC30] hover:shadow-[0_0_15px_rgba(0,255,204,0.5)] transition-all duration-300 transform hover:translate-y-[-5px]">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-[#3D0099] rounded-full mr-4 flex items-center justify-center text-[#00FFCC] font-bold">RM</div>

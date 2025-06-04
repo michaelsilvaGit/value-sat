@@ -61,9 +61,10 @@ export const Contact = () => {
       {/* Formulário e Informações de Contato */}
       <section className="py-16" style={{ background: COLORS.backgroundSecondary }}>
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-12">
+          <div className="items-center flex flex-col md:flex-row gap-12">
+            
             {/* Formulário de Contato */}
-            <div className="md:w-2/3">
+            {/* <div className="md:w-2/3">
               <h2 className="text-3xl font-bold font-heading text-white mb-4">
                 Envie sua <span className="text-[#00FFCC]" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>Mensagem</span>
               </h2>
@@ -132,6 +133,25 @@ export const Contact = () => {
                   <p className="text-[#FF3366] mt-4">Erro ao enviar mensagem. Tente novamente.</p>
                 )}
               </form>
+            </div> */}
+
+            {/* Mapa (Placeholder) */}
+            <div className="md:w-2/3">
+              <h3 className="text-xl font-semibold font-heading text-white mb-4">
+                Nossa <span className="text-[#00FFCC]" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>Localização</span>
+              </h3>
+              <div className="h-[500px] rounded-lg border border-[#00FFCC30] bg-[rgba(18,18,18,0.8)] overflow-hidden">
+                <iframe
+                  title="Google Maps"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.7430810335727!2d-49.308490324751546!3d-16.73966624694113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1e455b18a53%3A0xf173be5711132a17!2sAltis%20Prote%C3%A7%C3%A3o%20Veicular%20e%20Benef%C3%ADcios%20Em%20Goi%C3%A1s!5e0!3m2!1spt-BR!2sbr!4v1749051927069!5m2!1spt-BR!2sbr"
+                ></iframe>
+              </div>
             </div>
 
             {/* Informações de Contato */}
@@ -169,16 +189,6 @@ export const Contact = () => {
                     <h4 className="font-semibold text-[#00FFCC]" style={{ textShadow: '0 0 5px rgba(0, 255, 204, 0.5)' }}>Email</h4>
                     <p className="text-gray-300">{COMPANY_INFO.email}</p>
                   </div>
-                </div>
-              </div>
-
-              {/* Mapa (Placeholder) */}
-              <div className="mt-12">
-                <h3 className="text-xl font-semibold font-heading text-white mb-4">
-                  Nossa <span className="text-[#00FFCC]" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>Localização</span>
-                </h3>
-                <div className="h-64 rounded-lg border border-[#00FFCC30] bg-[rgba(18,18,18,0.8)] flex items-center justify-center text-gray-400">
-                  [Mapa Interativo Aqui]
                 </div>
               </div>
             </div>
