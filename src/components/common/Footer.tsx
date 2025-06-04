@@ -1,4 +1,4 @@
-import { COMPANY_INFO, NAVIGATION_LINKS, COLORS } from '../../lib/constants';
+import { COMPANY_INFO, NAVIGATION_LINKS, COLORS, DEVELOPED } from '../../lib/constants';
 
 export const Footer = () => {
   return (
@@ -108,8 +108,9 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-[#00FFCC30] mt-8 pt-8 text-center text-gray-300">
-          <p>{COMPANY_INFO.copyright}</p>
+        <div className="border-t border-[#00FFCC30] mt-8 pt-8 text-gray-300">
+          <p className="text-center">{COMPANY_INFO.copyright}</p>
+          <p className="text-end"> <span className="text-[#a7a7a7]">Desenvolvido por: </span> <span>{DEVELOPED.developed}</span></p>
         </div>
       </div>
     </footer>
