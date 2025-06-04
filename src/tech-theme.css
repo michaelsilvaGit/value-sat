@@ -1,0 +1,178 @@
+/* Nova paleta de cores e estilos tecnológicos */
+:root {
+  /* Cores principais */
+  --primary: #00FFCC;
+  --secondary: #3D0099;
+  --accent: #FF3366;
+  --background: #121212;
+  --background-secondary: #1E1E2F;
+  
+  /* Texto */
+  --text-light: #FFFFFF;
+  --text-light-secondary: #CCCCCC;
+  --text-dark: #121212;
+  
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #00FFCC 0%, #3D0099 100%);
+  --gradient-secondary: linear-gradient(135deg, #3D0099 0%, #FF3366 100%);
+  --gradient-background: linear-gradient(180deg, #121212 0%, #1E1E2F 100%);
+  
+  /* Efeitos */
+  --neon-glow: 0 0 15px rgba(0, 255, 204, 0.7);
+  --transition-speed: 0.3s;
+}
+
+/* Estilos globais */
+body {
+  background: var(--gradient-background);
+  color: var(--text-light);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  background: rgba(30, 30, 47, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 255, 204, 0.3);
+}
+
+/* Navegação */
+nav a {
+  color: var(--text-light) !important;
+  transition: all var(--transition-speed) ease;
+}
+
+nav a:hover {
+  color: var(--primary) !important;
+  text-shadow: 0 0 8px var(--primary);
+}
+
+/* Botões */
+.btn-primary {
+  background: var(--primary) !important;
+  color: var(--text-dark) !important;
+  border: none !important;
+  box-shadow: var(--neon-glow);
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.9);
+}
+
+.btn-secondary {
+  background: transparent !important;
+  color: var(--primary) !important;
+  border: 2px solid var(--primary) !important;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 255, 204, 0.2) !important;
+  box-shadow: var(--neon-glow);
+}
+
+/* Seções */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(61, 0, 153, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(0, 255, 204, 0.1) 0%, transparent 50%);
+  z-index: -1;
+}
+
+/* Cards */
+.card {
+  background: rgba(30, 30, 47, 0.7) !important;
+  border: 1px solid rgba(0, 255, 204, 0.3) !important;
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-speed) ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 255, 204, 0.5);
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-light);
+}
+
+h1 span, h2 span, h3 span {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+}
+
+/* Rodapé */
+footer {
+  background: var(--background) !important;
+  border-top: 1px solid rgba(0, 255, 204, 0.3);
+}
+
+/* Elementos decorativos */
+.tech-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  margin: 2rem 0;
+}
+
+.tech-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 255, 204, 0.1);
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  filter: blur(5px);
+  z-index: -1;
+}
+
+/* Animações */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.pulse {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+/* Formulários */
+input, textarea, select {
+  background: rgba(18, 18, 18, 0.8) !important;
+  border: 1px solid rgba(0, 255, 204, 0.3) !important;
+  color: var(--text-light) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 2px rgba(0, 255, 204, 0.2) !important;
+}
+
+/* Tabelas */
+table {
+  background: rgba(30, 30, 47, 0.7) !important;
+  border: 1px solid rgba(0, 255, 204, 0.3) !important;
+}
+
+thead {
+  background: rgba(61, 0, 153, 0.7) !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  :root {
+    --neon-glow: 0 0 10px rgba(0, 255, 204, 0.5);
+  }
+}
