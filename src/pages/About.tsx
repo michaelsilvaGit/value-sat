@@ -1,10 +1,18 @@
 import '../tech-theme.css';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import Button from '../components/ui/Button';
 import { COLORS, GRADIENTS } from '../lib/constants';
 
 export const About = () => {
+
+  const navigate = useNavigate();
+
+  const goNavigation = () => {
+    navigate('/produtos');
+  };
+
   return (
     <div className="min-h-screen flex flex-col" style={{ background: GRADIENTS.background }}>
       <Navbar />
@@ -232,7 +240,7 @@ export const About = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
             Descubra as soluções de rastreamento que melhor se adaptam às suas necessidades.
           </p>
-          <Button variant="primary">Ver Produtos</Button>
+          <Button variant="primary" onClick={goNavigation}>Ver Produtos</Button>
         </div>
       </section>
       

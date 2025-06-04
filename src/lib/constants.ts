@@ -79,6 +79,10 @@ export const COMPANY_INFO = {
     twitter: 'https://twitter.com/rastreauto',
   },
   copyright: `© ${new Date().getFullYear()} Value Sat. Todos os direitos reservados.`,
+  whatsapp: {
+    fone: '5562991856139',
+    message: 'Olá! Gostaria de mais informações sobre o ratreador.'
+  }
 };
 
 export const DEVELOPED = {

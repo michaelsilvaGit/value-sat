@@ -2,9 +2,15 @@ import '../tech-theme.css';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import Button from '../components/ui/Button';
-import { COLORS, GRADIENTS } from '../lib/constants';
+import { COLORS, GRADIENTS, COMPANY_INFO } from '../lib/constants';
 
 export const Products = () => {
+
+  const directWhatsapp = () => {
+    const url = `https://wa.me/${COMPANY_INFO.whatsapp.fone}?text=${encodeURIComponent(COMPANY_INFO.whatsapp.message)}`;
+    window.open(url, "_blank");
+  }
+
   return (
     <div className="min-h-screen flex flex-col" style={{ background: GRADIENTS.background }}>
       <Navbar />
@@ -306,7 +312,7 @@ export const Products = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
             Nossa equipe está pronta para ajudar você a escolher a melhor solução para suas necessidades.
           </p>
-          <Button variant="primary">Fale Conosco</Button>
+          <Button variant="primary" onClick={directWhatsapp}>Fale Conosco</Button>
         </div>
       </section>
       

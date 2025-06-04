@@ -148,6 +148,21 @@ footer {
   animation: pulse 3s infinite ease-in-out;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(-15px);
+    animation-timing-function: ease-out;
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
 /* Formulários */
 input, textarea, select {
   background: rgba(18, 18, 18, 0.8) !important;

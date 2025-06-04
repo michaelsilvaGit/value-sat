@@ -2,8 +2,15 @@ import '../tech-theme.css';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import { COLORS, GRADIENTS, COMPANY_INFO } from '../lib/constants';
+import Button from '@/components/ui/Button';
 
 export const Contact = () => {
+
+  const directWhatsapp = () => {
+    const url = `https://wa.me/${COMPANY_INFO.whatsapp.fone}?text=${encodeURIComponent(COMPANY_INFO.whatsapp.message)}`;
+    window.open(url, "_blank");
+  }
+
   // const [formData, setFormData] = useState({
   //   name: '',
   //   email: '',
@@ -41,10 +48,10 @@ export const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: GRADIENTS.background }}>
       <Navbar />
-      
+
       {/* Banner Secundário */}
       <section className="relative" style={{ background: GRADIENTS.secondary }}>
-        <div className="absolute inset-0" style={{ 
+        <div className="absolute inset-0" style={{
           backgroundImage: 'url("/assets/circuit-pattern.png")',
           backgroundSize: 'cover',
           opacity: 0.1
@@ -60,7 +67,7 @@ export const Contact = () => {
       <section className="py-16" style={{ background: COLORS.backgroundSecondary }}>
         <div className="container mx-auto px-4">
           <div className="items-center flex flex-col md:flex-row gap-12">
-            
+
             {/* Formulário de Contato */}
             {/* <div className="md:w-2/3">
               <h2 className="text-3xl font-bold font-heading text-white mb-4">
@@ -158,7 +165,7 @@ export const Contact = () => {
                 Informações de <span className="text-[#00FFCC]" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>Contato</span>
               </h2>
               <div className="w-20 h-1 bg-[#00FFCC] mb-6" style={{ boxShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}></div>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <svg className="w-6 h-6 mr-3 text-[#00FFCC] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -189,6 +196,11 @@ export const Contact = () => {
                   </div>
                 </div>
               </div>
+              <div className="mt-11 text-center sm:flex-row gap-4">
+                <Button variant="primary" onClick={directWhatsapp}>
+                  Fale Conosco
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -201,7 +213,7 @@ export const Contact = () => {
             Perguntas <span className="text-[#00FFCC]" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>Frequentes</span>
           </h2>
           <div className="tech-line w-24 mx-auto mb-12"></div>
-          
+
           <div className="max-w-3xl mx-auto space-y-4">
             {/* FAQ Item 1 */}
             <details className="bg-[rgba(30,30,47,0.7)] backdrop-blur-md rounded-lg border border-[#00FFCC30] overflow-hidden group">
@@ -215,7 +227,7 @@ export const Contact = () => {
                 Utilizamos tecnologia GPS para localizar seu veículo em tempo real. Os dados são transmitidos para nossa plataforma, onde você pode acessá-los via aplicativo ou web.
               </div>
             </details>
-            
+
             {/* FAQ Item 2 */}
             <details className="bg-[rgba(30,30,47,0.7)] backdrop-blur-md rounded-lg border border-[#00FFCC30] overflow-hidden group">
               <summary className="flex justify-between items-center p-4 cursor-pointer text-white font-medium group-hover:text-[#00FFCC] transition-colors">
@@ -228,7 +240,7 @@ export const Contact = () => {
                 Sim, nossos rastreadores são compatíveis com a maioria dos veículos, incluindo carros, motos, caminhões e ônibus. Consulte nossa equipe para verificar a compatibilidade específica.
               </div>
             </details>
-            
+
             {/* FAQ Item 3 */}
             <details className="bg-[rgba(30,30,47,0.7)] backdrop-blur-md rounded-lg border border-[#00FFCC30] overflow-hidden group">
               <summary className="flex justify-between items-center p-4 cursor-pointer text-white font-medium group-hover:text-[#00FFCC] transition-colors">
@@ -244,7 +256,24 @@ export const Contact = () => {
           </div>
         </div>
       </section>
-      
+
+      <a
+        href={`https://wa.me/${COMPANY_INFO.whatsapp.fone}?text=${encodeURIComponent(COMPANY_INFO.whatsapp.message)}`}   
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50"
+      >
+        <svg
+          style={{ boxShadow: '0 0 10px rgba(0, 255, 204, 0.7)'}}
+          className="w-16 h-16 text-white bg-[#00FFCC] rounded-full p-3 shadow-lg hover:scale-110 transition-transform duration-200 animate-bounce "
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+        >
+          <path d="M16.001 2.984C8.276 2.984 2 9.26 2 16.983c0 2.92.862 5.625 2.328 7.922L2 30l5.297-2.305A13.956 13.956 0 0016 30c7.725 0 14-6.275 14-13.998S23.725 2.984 16.001 2.984zm0 25.6a11.547 11.547 0 01-6.23-1.797l-.445-.277-3.136 1.362.668-3.07-.203-.476A11.417 11.417 0 014.6 16.983c0-6.327 5.074-11.4 11.4-11.4s11.4 5.073 11.4 11.4c0 6.326-5.074 11.4-11.4 11.4zm6.41-8.457c-.35-.175-2.063-1.02-2.383-1.137-.319-.118-.551-.175-.782.175-.233.35-.895 1.138-1.097 1.375-.2.237-.4.263-.75.088-.35-.176-1.478-.544-2.812-1.734-1.038-.926-1.738-2.068-1.942-2.418-.2-.35-.022-.538.152-.713.155-.154.35-.4.526-.6.175-.2.233-.35.35-.583.118-.233.06-.438-.03-.613-.088-.175-.788-1.9-1.08-2.606-.284-.684-.573-.59-.782-.6l-.664-.01c-.232 0-.609.088-.927.438s-1.22 1.19-1.22 2.907c0 1.718 1.248 3.374 1.422 3.605.175.233 2.46 3.75 5.962 5.257.834.36 1.484.574 1.99.733.837.267 1.6.229 2.203.139.672-.1 2.063-.844 2.355-1.66.291-.816.291-1.517.203-1.66-.087-.145-.319-.233-.668-.408z" />
+        </svg>
+      </a>
+
       <Footer />
     </div>
   );

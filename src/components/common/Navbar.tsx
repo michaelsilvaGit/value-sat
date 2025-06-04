@@ -38,7 +38,8 @@ export const Navbar = () => {
             </a>
           ))}
           <button className="bg-[#00FFCC] text-[#303030] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
-          onClick={customerArea}>
+                  onClick={customerArea}
+          >
             Área do cliente
           </button>
         </nav>

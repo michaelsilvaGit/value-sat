@@ -1,9 +1,10 @@
 import '../tech-theme.css';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import Button from '../components/ui/Button';
-import { COLORS, GRADIENTS } from '../lib/constants';
-import VideoBackground from '@/components/ui/ImageCarousel';
+import { COLORS, GRADIENTS, COMPANY_INFO} from '../lib/constants';
+import VideoBackground from '@/components/ui/VideoBackground';
 
 export const Home = () => {
 
@@ -13,6 +14,17 @@ export const Home = () => {
   //   '/assets/banner_image_2.webp',
   //   '/assets/banner_image_3.webp'
   // ];
+
+  const navigate = useNavigate();
+
+  const directWhatsapp = () => {
+    const url = `https://wa.me/${COMPANY_INFO.whatsapp.fone}?text=${encodeURIComponent(COMPANY_INFO.whatsapp.message)}`;
+    window.open(url, "_blank");
+  }
+
+  const goNavigation = () => {
+    navigate('/produtos');
+  };
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: GRADIENTS.background }}>
@@ -355,8 +367,8 @@ export const Home = () => {
             Não deixe para depois. Garanta a segurança do seu veículo com as melhores soluções de rastreamento do mercado.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button variant="primary">Fale Conosco</Button>
-            <Button variant="secondary">Ver Produtos</Button>
+            <Button variant="primary" onClick={directWhatsapp}>Fale Conosco</Button>
+            <Button variant="secondary" onClick={goNavigation}>Ver Produtos</Button>
           </div>
         </div>
       </section>
