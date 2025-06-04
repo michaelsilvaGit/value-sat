@@ -62,6 +62,7 @@ export const Contact = () => {
       <section className="py-16" style={{ background: COLORS.backgroundSecondary }}>
         <div className="container mx-auto px-4">
           <div className="items-center flex flex-col md:flex-row gap-12">
+            
             {/* Formulário de Contato */}
             {/* <div className="md:w-2/3">
               <h2 className="text-3xl font-bold font-heading text-white mb-4">

@@ -3,7 +3,6 @@ import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import Button from '../components/ui/Button';
 import { COLORS, GRADIENTS } from '../lib/constants';
-import ImageCarousel from '@/components/ui/ImageCarousel';
 import VideoBackground from '@/components/ui/ImageCarousel';
 
 export const Home = () => {
