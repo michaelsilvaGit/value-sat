@@ -8,11 +8,11 @@ import VideoBackground from '@/components/ui/ImageCarousel';
 export const Home = () => {
 
   // Lista de imagens para o carrossel
-  const bannerImages = [
-    '/assets/banner_image_1.webp',
-    '/assets/banner_image_2.webp',
-    '/assets/banner_image_3.webp'
-  ];
+  // const bannerImages = [
+  //   '/assets/banner_image_1.webp',
+  //   '/assets/banner_image_2.webp',
+  //   '/assets/banner_image_3.webp'
+  // ];
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: GRADIENTS.background }}>

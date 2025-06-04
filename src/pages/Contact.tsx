@@ -1,44 +1,42 @@
 import '../tech-theme.css';
-import { useState } from 'react';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
-import Button from '../components/ui/Button';
 import { COLORS, GRADIENTS, COMPANY_INFO } from '../lib/constants';
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: '',
+  // });
+  // const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prev) => ({ ...prev, [name]: value }));
+  // };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+  //   setSubmitStatus(null);
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+  //   // Simulate API call
+  //   await new Promise(resolve => setTimeout(resolve, 1500));
 
-    // Simulate success/error
-    const success = Math.random() > 0.2; // 80% success rate
-    if (success) {
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } else {
-      setSubmitStatus('error');
-    }
+  //   // Simulate success/error
+  //   const success = Math.random() > 0.2; // 80% success rate
+  //   if (success) {
+  //     setSubmitStatus('success');
+  //     setFormData({ name: '', email: '', subject: '', message: '' });
+  //   } else {
+  //     setSubmitStatus('error');
+  //   }
 
-    setIsSubmitting(false);
-  };
+  //   setIsSubmitting(false);
+  // };
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: GRADIENTS.background }}>
