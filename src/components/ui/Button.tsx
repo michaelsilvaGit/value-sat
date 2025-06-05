@@ -1,5 +1,6 @@
+import '../../tech-theme.css';
 import React from 'react';
-import { COLORS, EFFECTS } from '../../lib/constants';
+
 
 interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'tertiary';
@@ -23,9 +24,9 @@ export const Button = ({
   const baseStyles = 'font-heading font-medium rounded-md transition-all duration-300 inline-flex items-center justify-center';
   
   const variantStyles = {
-    primary: `bg-[${COLORS.primary}] text-[${COLORS.black}] hover:bg-opacity-90 hover:shadow-lg hover:shadow-[${COLORS.primary}]/30 transform hover:translate-y-[-2px]`,
-    secondary: `border-2 border-[${COLORS.primary}] text-[${COLORS.primary}] bg-transparent hover:bg-[${COLORS.primary}]/20 hover:shadow-lg hover:shadow-[${COLORS.primary}]/20 transform hover:translate-y-[-2px]`,
-    tertiary: `text-[${COLORS.primary}] underline hover:text-opacity-80 hover:shadow-sm hover:shadow-[${COLORS.primary}]/20`,
+    primary: `bg-[var(--primary)] text-[var(--text-dark)] hover:bg-opacity-90 hover:shadow-lg hover:shadow-[var(--primary)]/30 transform hover:translate-y-[-2px]`,
+    secondary: `border-2 border-[var(--primary)] text-[var(--primary)] bg-transparent hover:bg-[var(--primary)]/20 hover:shadow-lg hover:shadow-[var(--primary)]/20 transform hover:translate-y-[-2px]`,
+    tertiary: `text-[var(--primary)] underline hover:text-opacity-80 hover:shadow-sm hover:shadow-[var(--primary)]/20`,
   };
   
   const sizeStyles = {
@@ -43,7 +44,7 @@ export const Button = ({
       onClick={onClick}
       disabled={disabled}
       style={{
-        boxShadow: variant === 'primary' ? EFFECTS.neonGlow : 'none',
+        boxShadow: variant === 'primary' ? 'var(--neon-glow)' : 'none',
       }}
     >
       {children}

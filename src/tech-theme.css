@@ -1,25 +1,34 @@
 /* Nova paleta de cores e estilos tecnológicos */
 :root {
   /* Cores principais */
-  --primary: #00FFCC;
+  --primary: #00DCFF;
   --secondary: #3D0099;
   --accent: #FF3366;
   --background: #121212;
   --background-secondary: #1E1E2F;
+  --background-secondary-light: #232336;
   
   /* Texto */
   --text-light: #FFFFFF;
   --text-light-secondary: #CCCCCC;
   --text-dark: #121212;
+  --text-price: #FF3366;
   
   /* Gradientes */
-  --gradient-primary: linear-gradient(135deg, #00FFCC 0%, #3D0099 100%);
-  --gradient-secondary: linear-gradient(135deg, #3D0099 0%, #FF3366 100%);
-  --gradient-background: linear-gradient(180deg, #121212 0%, #1E1E2F 100%);
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+  --gradient-background: linear-gradient(180deg, var(--background) 0%, var(--background-secondary) 100%);
   
   /* Efeitos */
-  --neon-glow: 0 0 15px rgba(0, 255, 204, 0.7);
+  --neon-glow: 0 0 15px rgba(0, 255, 255, 0.7);
+  --neon-glow-text: 0 0 15px rgba(0, 255, 255, 0.5);
   --transition-speed: 0.3s;
+  --box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  --text-price-neon: rgba(255, 51, 102, 0.5);
+
+  /* Border */
+  --border-color: rgba(0, 255, 255, 0.3);
+
 }
 
 /* Estilos globais */
@@ -31,9 +40,9 @@ body {
 
 /* Cabeçalho */
 header {
-  background: rgba(30, 30, 47, 0.8) !important;
+  background: var(--background-secondary) !important;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 255, 204, 0.3);
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Navegação */
@@ -58,7 +67,7 @@ nav a:hover {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.9);
+  box-shadow: var(--box-shadow);
 }
 
 .btn-secondary {
@@ -69,7 +78,7 @@ nav a:hover {
 }
 
 .btn-secondary:hover {
-  background: rgba(0, 255, 204, 0.2) !important;
+  background:  var(--border-color)!important;
   box-shadow: var(--neon-glow);
 }
 
@@ -87,22 +96,22 @@ section::before {
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 30%, rgba(61, 0, 153, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(0, 255, 204, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 30%, var(--background-secondary) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, var(--border-color) 0%, transparent 50%);
   z-index: -1;
 }
 
 /* Cards */
 .card {
-  background: rgba(30, 30, 47, 0.7) !important;
-  border: 1px solid rgba(0, 255, 204, 0.3) !important;
+  background: var(--background-secondary) !important;
+  border: 1px solid var(--border-color) !important;
   backdrop-filter: blur(10px);
   transition: all var(--transition-speed) ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 255, 204, 0.5);
+  box-shadow: var(--neon-glow);
 }
 
 /* Títulos */
@@ -112,13 +121,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 span, h2 span, h3 span {
   color: var(--primary);
-  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+  text-shadow: var(--neon-glow-text);
 }
 
 /* Rodapé */
 footer {
   background: var(--background) !important;
-  border-top: 1px solid rgba(0, 255, 204, 0.3);
+  border-top: 1px solid var(--border-color);
 }
 
 /* Elementos decorativos */
@@ -131,8 +140,8 @@ footer {
 .tech-circle {
   position: absolute;
   border-radius: 50%;
-  background: rgba(0, 255, 204, 0.1);
-  border: 1px solid rgba(0, 255, 204, 0.3);
+  background: var(--border-color);
+  border: 1px solid var(--border-color);
   filter: blur(5px);
   z-index: -1;
 }
@@ -165,29 +174,29 @@ footer {
 
 /* Formulários */
 input, textarea, select {
-  background: rgba(18, 18, 18, 0.8) !important;
-  border: 1px solid rgba(0, 255, 204, 0.3) !important;
+  background: var(--background-secondary) !important;
+  border: 1px solid var(--border-color) !important;
   color: var(--text-light) !important;
 }
 
 input:focus, textarea:focus, select:focus {
   border-color: var(--primary) !important;
-  box-shadow: 0 0 0 2px rgba(0, 255, 204, 0.2) !important;
+  box-shadow: 0 0 0 2px var(--border-color) !important;
 }
 
 /* Tabelas */
 table {
-  background: rgba(30, 30, 47, 0.7) !important;
-  border: 1px solid rgba(0, 255, 204, 0.3) !important;
+  background: var(--background-secondary) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 thead {
-  background: rgba(61, 0, 153, 0.7) !important;
+  background: var(--secondary) !important;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   :root {
-    --neon-glow: 0 0 10px rgba(0, 255, 204, 0.5);
+    --neon-glow: 0 0 10px var(---neon-glow);
   }
 }

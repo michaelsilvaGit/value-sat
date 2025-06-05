@@ -1,7 +1,7 @@
 // Design system constants with new tech theme
 
 export const COLORS = {
-  primary: '#00FFCC',
+  primary: '#00DCFF',
   secondary: '#3D0099',
   accent: '#FF3366',
   background: '#121212',
@@ -13,7 +13,7 @@ export const COLORS = {
 };
 
 export const GRADIENTS = {
-  primary: 'linear-gradient(135deg, #00FFCC 0%, #3D0099 100%)',
+  primary: 'linear-gradient(135deg, #00DCFF 0%, #3D0099 100%)',
   secondary: 'linear-gradient(135deg, #3D0099 0%, #FF3366 100%)',
   background: 'linear-gradient(180deg, #121212 0%, #1E1E2F 100%)',
 };

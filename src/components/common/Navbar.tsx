@@ -1,4 +1,4 @@
-import { NAVIGATION_LINKS, COLORS } from '../../lib/constants';
+import { NAVIGATION_LINKS } from '../../lib/constants';
 import { useState } from 'react';
 
 export const Navbar = () => {
@@ -13,7 +13,7 @@ export const Navbar = () => {
   }
 
   return (
-    <header className="bg-opacity-80 backdrop-blur-md border-b border-[#00FFCC30] sticky top-0 z-50" style={{ background: COLORS.backgroundSecondary }}>
+    <header className="bg-opacity-80 backdrop-blur-md border-b border-[var(--border-color)] sticky top-0 z-50" style={{ background: 'var(--background-secondary)' }}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
@@ -32,15 +32,15 @@ export const Navbar = () => {
             <a
               key={link.path}
               href={link.path}
-              className="font-medium text-white hover:text-[#00FFCC] transition-colors duration-300 hover:shadow-glow"
+              className="font-medium text-[var(--text-light)] hover:text-[var(--primary)] transition-colors duration-300 hover:shadow-glow"
               style={{ textShadow: 'none', transition: 'all 0.3s ease' }}
-              onMouseOver={(e) => e.currentTarget.style.textShadow = '0 0 8px rgba(0, 255, 204, 0.7)'}
+              onMouseOver={(e) => e.currentTarget.style.textShadow = '0 0 8px var(--neon-glow-text)'}
               onMouseOut={(e) => e.currentTarget.style.textShadow = 'none'}
             >
               {link.name}
             </a>
           ))}
-          <button className="bg-[#00FFCC] text-[#303030] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
+          <button className="bg-[var(--primary)] text-[#5a5a5a] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
                   onClick={customerArea}
           >
             Área do cliente
@@ -49,7 +49,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-[var(--text-light)] focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -81,27 +81,24 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#1E1E2F] border-t border-[#00FFCC30] shadow-lg">
+        <div className="md:hidden bg-[var(--background-secondary)] border-t border-[var(--border-color)] shadow-lg">
           <div className="container mx-auto px-4 py-3">
             <nav className="flex flex-col space-y-4">
               {NAVIGATION_LINKS.map((link) => (
                 <a
                   key={link.path}
                   href={link.path}
-                  className="font-medium text-white hover:text-[#00FFCC] transition-colors py-2"
+                  className="font-medium text-[var(--text-light)] hover:text-[var(--primary)] transition-colors py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
-              <a
-                href="/contato"
-                className="bg-[#00FFCC] text-[#121212] px-4 py-2 rounded-md font-medium hover:opacity-90 transition-all inline-block text-center"
-                style={{ boxShadow: '0 0 15px rgba(0, 255, 204, 0.7)' }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Fale Conosco
-              </a>
+              <button className="bg-[var(--primary)] text-[var(--text-light)] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
+                  onClick={customerArea}
+          >
+            Área do cliente
+          </button>
             </nav>
           </div>
         </div>
