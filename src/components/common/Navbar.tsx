@@ -18,8 +18,11 @@ export const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold font-heading">
-            <span className="text-[#00FFCC] mr-1" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>Rastre</span>
-            <span className="text-white">Auto</span>
+            <img
+              src="/assets/logo-final.png"
+              alt="Logo ValueSat"
+              className="h-16 w-auto"
+            />
           </a>
         </div>
 
