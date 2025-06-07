@@ -7,17 +7,31 @@ import { COMPANY_INFO } from '../lib/constants';
 import VideoBackground from '@/components/ui/VideoBackground';
 import TechnologyCard from '@/components/ui/TechnologyCard';
 import DepoimentCard from '@/components/ui/DepoimentCard';
+import { useEffect, useState } from 'react';
 
 export const Home = () => {
 
-  // Lista de imagens para o carrossel
-  // const bannerImages = [
-  //   '/assets/banner_image_1.webp',
-  //   '/assets/banner_image_2.webp',
-  //   '/assets/banner_image_3.webp'
-  // ];
-
   const navigate = useNavigate();
+  const [videoSrc, setVideoSrc] = useState("/assets/video-4.mp4");
+
+  useEffect(() => {
+    const updateVideoSrc = () => {
+      const width = window.innerWidth;
+
+      if (width < 640) {
+        setVideoSrc("/assets/video-6.mp4");
+      } else if (width >= 640 && width < 1024) {
+        setVideoSrc("/assets/video-6.mp4");
+      } else {
+        setVideoSrc("/assets/video-4.mp4");
+      }
+    };
+
+    updateVideoSrc();
+    window.addEventListener("resize", updateVideoSrc); 
+
+    return () => window.removeEventListener("resize", updateVideoSrc);
+  }, []);
 
   const directWhatsapp = () => {
     const url = `https://wa.me/${COMPANY_INFO.whatsapp.fone}?text=${encodeURIComponent(COMPANY_INFO.whatsapp.message)}`;
@@ -28,13 +42,14 @@ export const Home = () => {
     navigate('/produtos');
   };
 
+  
   return (
     <div className="min-h-screen flex flex-col" style={{ background: 'var(--gradient-background)' }}>
       <Navbar />
 
       {/* Banner Principal */}
       <section className="relative text-[var(--text-light)]">
-        <VideoBackground src="/assets/video-4.mp4" />
+        <VideoBackground src={videoSrc} />
 
         {/* Overlay escuro para melhorar a legibilidade do texto */}
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>

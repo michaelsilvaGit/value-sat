@@ -21,7 +21,7 @@ export const Navbar = () => {
             <img
               src="/assets/logo-site-2.png"
               alt="Logo ValueSat"
-              className="h-24 w-auto"
+              className="h-16 md:h-16 lg:h-24 w-auto"
             />
           </a>
         </div>
