@@ -74,9 +74,9 @@ export const COMPANY_INFO = {
   email: 'contato@rastreauto.com.br',
   address: 'Av. Ipanema, nº 1855 - Quadra 92 Lote 12',
   socialMedia: {
-    facebook: 'https://facebook.com/rastreauto',
-    instagram: 'https://instagram.com/rastreauto',
-    twitter: 'https://twitter.com/rastreauto',
+    facebook: 'https://facebook.com/',
+    instagram: 'https://instagram.com/',
+    twitter: 'https://twitter.com/',
   },
   copyright: `© ${new Date().getFullYear()} Value Sat. Todos os direitos reservados.`,
   whatsapp: {

@@ -19,9 +19,9 @@ export const Navbar = () => {
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold font-heading">
             <img
-              src="/assets/logo-final.png"
+              src="/assets/logo-site-2.png"
               alt="Logo ValueSat"
-              className="h-16 w-auto"
+              className="h-24 w-auto"
             />
           </a>
         </div>
@@ -40,7 +40,7 @@ export const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="bg-[var(--primary)] text-[#5a5a5a] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
+          <button className="bg-[var(--primary)] text-[var(--text-dark)] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
                   onClick={customerArea}
           >
             Área do cliente
@@ -94,7 +94,7 @@ export const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <button className="bg-[var(--primary)] text-[var(--text-light)] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
+              <button className="bg-[var(--primary)] text-[var(--text-dark)] px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
                   onClick={customerArea}
           >
             Área do cliente

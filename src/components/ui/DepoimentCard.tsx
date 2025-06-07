@@ -22,7 +22,7 @@ const DepoimentCard: React.FC<DepoimentCardProps> = ({ name, profession, comment
         </div>
         <div>
           <h4 className="font-semibold text-[var(--text-light)]">{name}</h4>
-          <p className="text-sm text-[var(--primary)]">{profession}</p>
+          <p className="text-sm text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow)'}}>{profession}</p>
         </div>
       </div>
       <div

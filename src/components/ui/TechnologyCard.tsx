@@ -11,7 +11,7 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({ titulo, descricao, link
   return (
     <div className="card rounded-lg">
       <div className="p-6">
-        <div className="w-16 h-16 bg-[var(--primary)] rounded-full flex items-center justify-center mb-4 text-[var(--text-dark)]">
+        <div className="w-16 h-16 bg-[var(--primary)] rounded-full flex items-center justify-center mb-4 text-[var(--text-dark)]" style={{ boxShadow: 'var(--neon-glow)' }}>
           {icone}
         </div>
         <h3

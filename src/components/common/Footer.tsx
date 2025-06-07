@@ -9,8 +9,11 @@ export const Footer = () => {
           <div className="md:col-span-1">
             <div className="mb-4">
               <a href="/" className="text-2xl font-bold font-heading">
-                <span className="text-[var(--primary)] mr-1" style={{ textShadow: '0 0 10px rgba(0, 255, 204, 0.7)' }}>Rastre</span>
-                <span className="text-[var(--text-light)]">Auto</span>
+                <img
+                  src="/assets/logo-site-1.png"
+                  alt="Logo ValueSat"
+                  className="h-12 w-auto"
+                />
               </a>
             </div>
             <p className="mb-4 text-[var(--text-light-secondary)]">

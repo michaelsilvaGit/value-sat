@@ -39,17 +39,6 @@ export const Home = () => {
         {/* Overlay escuro para melhorar a legibilidade do texto */}
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
 
-        {/* Grade tecnológica sobreposta ao video */}
-        <div
-          className="absolute inset-0 z-20"
-          style={{
-            backgroundImage: `url('/assets/tech-grid.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            opacity: 0.3
-          }}
-        ></div>
-
         {/* Elementos decorativos */}
         <div className="tech-circle absolute w-64 h-64 top-20 left-20" style={{ background: 'rgba(0, 255, 204, 0.1)' }}></div>
         <div className="tech-circle absolute w-96 h-96 bottom-10 right-10" style={{ background: 'rgba(61, 0, 153, 0.1)' }}></div>

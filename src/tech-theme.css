@@ -7,6 +7,10 @@
   --background: #121212;
   --background-secondary: #1E1E2F;
   --background-secondary-light: #232336;
+  --neon-glow-color: rgba(0, 255, 255, 0.7);
+  --neon-glow-text-color: rgba(0, 255, 255, 0.5);
+  --text-price-neon-color: rgba(255, 51, 102, 0.5);
+  --border-color-color: rgba(0, 255, 255, 0.3);
   
   /* Texto */
   --text-light: #FFFFFF;
@@ -20,14 +24,14 @@
   --gradient-background: linear-gradient(180deg, var(--background) 0%, var(--background-secondary) 100%);
   
   /* Efeitos */
-  --neon-glow: 0 0 15px rgba(0, 255, 255, 0.7);
-  --neon-glow-text: 0 0 15px rgba(0, 255, 255, 0.5);
+  --neon-glow: 0 0 15px var(--neon-glow-color);
+  --neon-glow-text: 0 0 15px var(--neon-glow-text-color);
   --transition-speed: 0.3s;
-  --box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
-  --text-price-neon: rgba(255, 51, 102, 0.5);
+  --box-shadow: 0 0 15px var(--neon-glow-text-color);
+  --text-price-neon: var(--text-price-neon-color);
 
   /* Border */
-  --border-color: rgba(0, 255, 255, 0.3);
+  --border-color: var(--border-color-color);
 
 }
 
@@ -197,6 +201,6 @@ thead {
 /* Responsividade */
 @media (max-width: 768px) {
   :root {
-    --neon-glow: 0 0 10px var(---neon-glow);
+    --neon-glow: 0 0 10px var(--neon-glow-color);
   }
 }
