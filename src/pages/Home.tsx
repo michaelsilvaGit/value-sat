@@ -34,7 +34,7 @@ export const Home = () => {
 
       {/* Banner Principal */}
       <section className="relative text-[var(--text-light)]">
-        <VideoBackground src="/assets/video.mp4" />
+        <VideoBackground src="/assets/video-4.mp4" />
 
         {/* Overlay escuro para melhorar a legibilidade do texto */}
         <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
@@ -58,7 +58,7 @@ export const Home = () => {
       </section>
 
       {/* Tecnologias de Rastreamento */}
-      <section className="py-16 bg-[var(--background-secondary)]">
+      <section className="py-16 bg-[var(--background-secondary)] border-t border-[var(--border-color)]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold font-heading text-center text-[var(--text-light)] mb-4">
             Tecnologias de <span className="text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow)' }}>Rastreamento</span>
