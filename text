@@ -1,0 +1,67 @@
+Tecnologias e funcionalidades comuns
+1. Comunicação 4G 
+Usa principalmente conexão 4G, garantindo transmissão rápida e estabilidade.                                     ----------------------
+
+Em regiões sem 4G, pode cair para 2G ou 3G, embora algumas operadoras já estejam desativando o 2G 
+
+
+
+2. Posicionamento triplo: GPS + GNSS (e às vezes BDS/Glonass)
+Combina GPS com sistemas globais como GLONASS, BDS e outras, oferecendo precisão de até 2–10 metros             -----------------------
+
+
+3. Corte remoto de ignição ou combustível
+Permite bloquear o veículo à distância por meio de relés elétricos — útil em caso de furto                     ------------------------------
+
+
+4. Detecção de comportamentos
+Acelerômetro e giroscópio integrados monitoram:
+
+acelerações fortes,
+
+frenagens bruscas,
+
+curvas agressivas,
+
+excesso de velocidade 
+
+
+5. Alertas e sensores diversos
+Alarmes configuráveis:
+
+velocidade excedida,
+
+ignição ligada/desligada,
+
+violação de cerca virtual,
+
+bateria baixa 
+
+
+6. Bateria interna e modos standby
+Alguns rastreadores têm bateria própria (1 200 mAh a 4 500 mAh), mantendo funcionamento mesmo sem energia do carro 
+
+
+Modos de economia de energia prolongam a autonomia 
+
+
+
+7. Reprogramação e manutenção remota (OTA)
+Atualizações de firmware via rede permitem ajustes sem abrir o equipamento 
+
+
+
+8. Plataforma e App
+Costumam incluir plataforma web / app com:
+
+rastreamento em tempo real (intervalo de 30 s a 2 min de atualização),
+
+histórico de rotas,
+
+alertas via app/SMS,
+
+bloqueio remoto 
+
+
+9. Robustez e certificações
+Muitos possuem proteção contra água/pó (IP67) e suportam temperaturas extremas, de –20 °C até 70 °C

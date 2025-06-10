@@ -84,7 +84,7 @@ export const Home = () => {
             {/* Card 1 */}
             <TechnologyCard
               titulo="GPS Avançado"
-              descricao="Localização precisa em tempo real com tecnologia GPS de última geração, garantindo monitoramento contínuo."
+              descricao="Localização precisa em tempo real com tecnologia GPS 4G de última geração, garantindo transmissão rápida e estabilidade."
               link="/produtos"
               icone={
                 <svg
@@ -106,8 +106,8 @@ export const Home = () => {
 
             {/* Card 2 */}
             <TechnologyCard
-              titulo="Aplicativo Mobile"
-              descricao="Controle total na palma da sua mão com nosso aplicativo intuitivo para iOS e Android, com alertas em tempo real."
+              titulo="Posicionamento Triplo"
+              descricao="GPS + GNSS + BDS/Glonass. Combina GPS com sistemas globais como GLONASS, BDS e outros. Oferecendo precisão de 2 a 10 metros"
               link="/produtos"
               icone={
                 <svg
@@ -121,7 +121,13 @@ export const Home = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                   />
                 </svg>
               }
@@ -130,7 +136,7 @@ export const Home = () => {
             {/* Card 3 */}
             <TechnologyCard
               titulo="Bloqueio Remoto"
-              descricao="Segurança adicional com capacidade de bloqueio remoto do veículo em caso de roubo ou uso não autorizado."
+              descricao="Corte remoto de ignição ou combustível. Permite bloquear o veículo à distância por meio de relés elétricos."
               link="/produtos"
               icone={
                 <svg
@@ -169,9 +175,9 @@ export const Home = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold font-heading mb-2 text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow-text)' }}>Monitoramento 24/7</h3>
+              <h3 className="text-xl font-semibold font-heading mb-2 text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow-text)' }}>Acompanhamento 24/7</h3>
               <p className="text-[var(--text-light-secondary)]">
-                Acompanhamento contínuo do seu veículo, 24 horas por dia, 7 dias por semana, garantindo segurança total.
+                Acompanhamento contínuo 24 horas por dia, 7 dias por semana, garantindo proteção total.
               </p>
             </div>
 
@@ -184,7 +190,7 @@ export const Home = () => {
               </div>
               <h3 className="text-xl font-semibold font-heading mb-2 text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow-text)' }}>Resposta Rápida</h3>
               <p className="text-[var(--text-light-secondary)]">
-                Alertas instantâneos e equipe de suporte pronta para agir rapidamente em caso de emergências.
+                Alertas instantâneos com alarmes configuráveis. Velocidade excedida, ignição ligada/desligada, violação de cerca virtual, bateria baixa.
               </p>
             </div>
 
@@ -227,7 +233,7 @@ export const Home = () => {
                         <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                         </svg>
-                        Bloqueio remoto do veículo
+                        Bloqueio remoto do veículo / bem
                       </li>
                       <li className="flex items-center">
                         <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -241,6 +247,18 @@ export const Home = () => {
                         </svg>
                         Histórico de rotas por 90 dias
                       </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        Detecção de comportamentos
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        Robustez e certificações
+                      </li>
                     </ul>
                     <Button variant="primary">Ver Detalhes</Button>
                   </div>
@@ -253,13 +271,12 @@ export const Home = () => {
                     backgroundSize: '150% 150%',
                     animation: 'pulse 3s infinite ease-in-out'
                   }}></div>
-                  <div className="relative z-10 text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[var(--border-color)] border border-[var(--border-color)] flex items-center justify-center">
-                      <svg className="w-16 h-16 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                      </svg>
-                    </div>
-                    <p className="text-[var(--primary)]">Rastreador Premium</p>
+                  <div className="relative z-10">
+                    <img
+                      src="/assets/rastreador3.png"
+                      alt="rastreador ValueSat"
+                      className="md:h-16 lg:h-[500px] w-full"
+                    />
                   </div>
                 </div>
               </div>
