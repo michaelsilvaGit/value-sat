@@ -219,19 +219,21 @@ export const Contact = () => {
             {/* FAQ Item 1 */}
             <FaqCard
               question="Como funciona o rastreamento veicular?"
-              answer="Utilizamos tecnologia GPS para localizar seu veículo em tempo real. Os dados são transmitidos para nossa plataforma, onde você pode acessá-los via aplicativo ou web."
+              answer="Utilizamos tecnologia GPS para localizar seu veículo em tempo real. Os dados são transmitidos para nossa plataforma, onde você pode acessá-los via web / mobile."
             />
 
             {/* FAQ Item 2 */}
             <FaqCard
               question="É possível instalar o rastreador em qualquer veículo?"
-              answer="Sim, nossos rastreadores são compatíveis com a maioria dos veículos, incluindo carros, motos, caminhões e ônibus. Consulte nossa equipe para verificar a compatibilidade específica."
+              answer="Sim, nosso rastreador são compatíveis com a maioria dos veículos, incluindo carros, motos, caminhões, ônibus, jet skis, navio. 
+              Seja na terra ou no mar, nosso ratreador é ideal. Consulte nossa equipe para verificar a compatibilidade específica."
             />
         
             {/* FAQ Item 3 */}
             <FaqCard
               question="O que acontece em caso de roubo ou furto?"
-              answer="Em caso de roubo ou furto, você deve entrar em contato imediatamente com nossa central de monitoramento 24h. Nossa equipe auxiliará na localização e recuperação do veículo junto às autoridades competentes."
+              answer="Em caso de roubo ou furto, você deve entrar imediatamento na nossa central de rastreamento e fazer 
+              as   ações de bloqueio do seu veículo. Entre em contato no 190 e nosso sistema auxiliará na localização e recuperação do veículo junto às autoridades competentes."
             />
           </div>
         </div>

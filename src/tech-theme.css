@@ -28,7 +28,7 @@
   --neon-glow-text: 0 0 15px var(--neon-glow-text-color);
   --transition-speed: 0.3s;
   --box-shadow: 0 0 15px var(--neon-glow-text-color);
-  --text-price-neon: var(--text-price-neon-color);
+  --text-price-neon: 0 0 15px var(--text-price-neon-color);
 
   /* Border */
   --border-color: var(--border-color-color);

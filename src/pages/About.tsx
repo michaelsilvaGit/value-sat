@@ -58,18 +58,18 @@ export const About = () => {
               </h2>
               <div className="w-20 h-1 bg-[var(--primary)] mb-6" style={{ boxShadow: 'var(--box-shadow)' }}></div>
               <p className="text-[var(--text-light-secondary)] mb-4">
-                A RastreAuto é uma empresa especializada em soluções de rastreamento veicular, 
-                fundada com o objetivo de proporcionar mais segurança e tranquilidade para proprietários 
-                de veículos e gestores de frotas.
+                A Value Sat é uma empresa especializada em rastreamento, comprometida com a segurança e tranquilidade dos nossos clientes. 
+                Atuamos com tecnologia de ponta para oferecer soluções eficazes e acessíveis para todos os tipos de veículos: 
+                carros, motos e bicicletas elétricas a jet skis, canoas e embarcações.
               </p>
               <p className="text-[var(--text-light-secondary)] mb-4">
-                Com anos de experiência no mercado, desenvolvemos tecnologias avançadas que permitem 
+                Com experiência no mercado, desenvolvemos tecnologias avançadas que permitem 
                 o monitoramento em tempo real, garantindo a localização precisa e a recuperação 
                 eficiente em casos de roubo ou furto.
               </p>
               <p className="text-[var(--text-light-secondary)]">
                 Nossa missão é oferecer soluções inovadoras e acessíveis que transformem a maneira 
-                como as pessoas protegem seus veículos, utilizando o que há de mais moderno em 
+                como as pessoas protegem seus bens, utilizando o que há de mais moderno em 
                 tecnologia de rastreamento.
               </p>
             </div>
@@ -89,7 +89,7 @@ export const About = () => {
             {/* Valor 1 */}
             <ValueCard
               title="Segurança"
-              description="Priorizamos a segurança em tudo o que fazemos, desde o desenvolvimento de nossos produtos até o atendimento ao cliente, garantindo a proteção dos veículos e dados."
+              description="Priorizamos a segurança em tudo o que fazemos, desde o desenvolvimento de nossos produtos até o atendimento ao cliente, desde a proteção dos veículos e dados."
               icon={
                 <svg
                   className="w-full h-full"
@@ -136,8 +136,8 @@ export const About = () => {
 
             <ValueCard
               title="Compromisso"
-              description="Estamos comprometidos com a satisfação de nossos clientes, oferecendo suporte 
-              de qualidade e soluções personalizadas para atender às suas necessidades específicas."
+              description="Estamos comprometidos com a satisfação de nossos clientes, oferecendo um produto de qualidade 
+                           para atender às suas necessidades específicas."
               icon={
                 <svg
                   className="w-full h-full"
@@ -169,8 +169,8 @@ export const About = () => {
               </h2>
               <div className="w-20 h-1 bg-[var(--primary)] mb-6" style={{ boxShadow: 'var(--box-shadow)' }}></div>
               <p className="text-[var(--text-light-secondary)] mb-6">
-                Na RastreAuto, nos destacamos pela excelência em cada aspecto do nosso serviço, 
-                desde a tecnologia utilizada até o atendimento ao cliente.
+                Na Value Sat, nos destacamos pela excelência em cada aspecto do nosso produto, 
+                desde a tecnologia utilizada até a satisfação do cliente.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -187,8 +187,8 @@ export const About = () => {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <h4 className="font-semibold text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow-text)' }}>Suporte 24/7</h4>
-                    <p className="text-[var(--text-light-secondary)]">Equipe disponível 24 horas por dia, 7 dias por semana para atendimento.</p>
+                    <h4 className="font-semibold text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow-text)' }}>Rastreamento 24/7</h4>
+                    <p className="text-[var(--text-light-secondary)]">Rastreamento disponível 24 horas por dia, 7 dias por semana sem interrupção.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -196,7 +196,7 @@ export const About = () => {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <h4 className="font-semibold text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow-text)' }}>Aplicativo intuitivo</h4>
+                    <h4 className="font-semibold text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow-text)' }}>Sistema Web / App intuitivo</h4>
                     <p className="text-[var(--text-light-secondary)]">Interface amigável e fácil de usar, com todas as funcionalidades necessárias.</p>
                   </div>
                 </li>
@@ -255,12 +255,12 @@ export const About = () => {
           backgroundSize: 'cover',
           opacity: 0.1
         }}></div>
-        <div className="container mx-auto px-4 text-center relative z-10" data-aos="fade-left" data-aos-delay="100">
+        <div className="container mx-auto px-4 text-center relative z-10" data-aos="fade-left" data-aos-delay="100" >
           <h2 className="text-3xl font-bold font-heading mb-6 text-[var(--text-light)]">
             Conheça nossos <span className="text-[var(--text-dark)]">produtos</span>
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-[var(--text-light)]">
-            Descubra as soluções de rastreamento que melhor se adaptam às suas necessidades.
+            Descubra essa solução de rastreamento que melhor se adaptam às suas necessidades.
           </p>
           <Button variant="primary" onClick={goNavigation}>Ver Produtos</Button>
         </div>

@@ -84,7 +84,7 @@ export const Products = () => {
               <div className="flex items-center mb-6">
                 <div className="flex items-center">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <svg key={star} className="w-5 h-5 text-[#FF3366]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <svg key={star} className="w-5 h-5 text-[var(--text-price)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                     </svg>
                   ))}
@@ -93,19 +93,20 @@ export const Products = () => {
               </div>
               
               <div className="mb-6">
-                <span className="text-[#FF3366] font-bold text-3xl" style={{ textShadow: '0 0 5px rgba(255, 51, 102, 0.5)' }}>R$ 499,00</span>
-                <span className="text-[var(--text-light-secondary)] ml-2 line-through">R$ 599,00</span>
-                <span className="ml-2 bg-[#FF3366] text-[var(--text-light)] text-xs px-2 py-1 rounded">-17%</span>
+                <div className="flex items-center">
+                  <span className="text-[var(--primary)] mr-2" style={{ textShadow: 'var(--neon-glow-text)' }}>A partir</span>
+                  <span className="text-[var(--text-price)] font-bold text-3xl" style={{ textShadow: 'var(--text-price-neon)' }}>R$ 39,00</span>
+                </div>
               </div>
               
               <div className="mb-8 text-[var(--text-light-secondary)]">
                 <p className="mb-4">
-                  Nossa solução mais completa para rastreamento, com tecnologia de ponta para garantir a segurança e monitoramento do seu veículo em tempo real, 24 horas por dia, 7 dias por semana.
-                </p>
-                <p>
                   O Rastreador Premium Value Sat oferece recursos avançados como Bloqueio remoto, Cercas virtuais, Histórico de rotas por 90 dias, Detecção de comportamentos, Acelerômetro e giroscópio integrados monitoram:
                   acelerações fortes, frenagens bruscas, curvas agressivas, excesso de velocidade. Alertas e sensores diversos, Alarmes configuráveis: velocidade excedida, ignição ligada/desligada,
                   violação de cerca virtual, bateria baixa.
+                </p>
+                <p>
+                  Nossa solução mais completa para rastreamento, com tecnologia de ponta para garantir a segurança e monitoramento do seu veículo em tempo real, 24 horas por dia, 7 dias por semana.
                 </p>
               </div>
               
@@ -152,7 +153,7 @@ export const Products = () => {
                 </ul>
               </div>
               
-              {/* Botões de Ação */}
+              {/* Botão de Ação */}
               <div className="flex flex-wrap gap-4">
                 <Button variant="primary" onClick={directWhatsapp} size="large">Fale Conosco</Button>
               </div>
@@ -201,8 +202,8 @@ export const Products = () => {
                   <td className="py-4 px-6 text-[var(--text-light-secondary)]">– 20°C até 70°C</td>
                 </tr>
                 <tr style={{ background: 'rgba(30, 30, 47, 0.5)' }}>
-                  <td className="py-4 px-6 font-medium text-[var(--text-light)]">Garantia</td>
-                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">2 anos</td>
+                  <td className="py-4 px-6 font-medium text-[var(--text-light)]">Update</td>
+                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">Atualizações de firmware via rede (OTA)</td>
                 </tr>
               </tbody>
             </table>
