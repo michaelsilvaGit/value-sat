@@ -54,31 +54,26 @@ export const Footer = () => {
           
           {/* Serviços */}
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold mb-4 text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow)' }}>Serviços</h3>
+            <h3 className="text-lg font-semibold mb-4 text-[var(--primary)]" style={{ textShadow: 'var(--neon-glow)' }}>Rastreamento</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
+                <a href="#/produtos" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
                   Rastreamento Veicular
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
+                <a href="#/produtos" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
                   Monitoramento 24h
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
+                <a href="#/produtos" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
                   Bloqueio Remoto
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
+                <a href="#/produtos" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
                   Gestão de Frotas
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
-                  Suporte Técnico
                 </a>
               </li>
             </ul>

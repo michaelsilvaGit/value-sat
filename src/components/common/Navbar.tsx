@@ -9,7 +9,8 @@ export const Navbar = () => {
   };
 
   const customerArea = () =>{
-    
+    const url = `https://valuesat.rastreamento.vip/login?empresa=valuesat&plataforma=web&redirect=yes`;
+    window.open(url, "_blank");
   }
 
   return (

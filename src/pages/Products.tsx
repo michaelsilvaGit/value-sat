@@ -103,7 +103,9 @@ export const Products = () => {
                   Nossa solução mais completa para rastreamento, com tecnologia de ponta para garantir a segurança e monitoramento do seu veículo em tempo real, 24 horas por dia, 7 dias por semana.
                 </p>
                 <p>
-                  O Rastreador Premium Value Sat oferece recursos avançados como bloqueio remoto, cercas virtuais e histórico de rotas por 90 dias.
+                  O Rastreador Premium Value Sat oferece recursos avançados como Bloqueio remoto, Cercas virtuais, Histórico de rotas por 90 dias, Detecção de comportamentos, Acelerômetro e giroscópio integrados monitoram:
+                  acelerações fortes, frenagens bruscas, curvas agressivas, excesso de velocidade. Alertas e sensores diversos, Alarmes configuráveis: velocidade excedida, ignição ligada/desligada,
+                  violação de cerca virtual, bateria baixa.
                 </p>
               </div>
               
@@ -111,48 +113,48 @@ export const Products = () => {
               <div className="mb-8">
                 <h3 className="text-xl font-semibold font-heading mb-4 text-[var(--text-light)]">Características:</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-[var(--primary)] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-[var(--text-light-secondary)]">Rastreamento GPS em tempo real</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-[var(--primary)] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-[var(--text-light-secondary)]">Bloqueio remoto do veículo</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-[var(--primary)] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-[var(--text-light-secondary)]">Cercas virtuais configuráveis</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-[var(--primary)] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-[var(--text-light-secondary)]">Histórico de rotas por 90 dias</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-[var(--primary)] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-[var(--text-light-secondary)]">Alertas de movimento e velocidade</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-[var(--primary)] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-[var(--text-light-secondary)]">Suporte técnico prioritário</span>
-                  </li>
+                <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        GPS de alta precisão
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        Bloqueio remoto do veículo
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        Alertas de velocidade e cercas virtuais
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        Histórico de rotas por 90 dias
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        Detecção de comportamentos
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        Robustez e certificações
+                      </li>
                 </ul>
               </div>
               
               {/* Botões de Ação */}
               <div className="flex flex-wrap gap-4">
-                <Button variant="primary" size="large">Fale Conosco</Button>
+                <Button variant="primary" onClick={directWhatsapp} size="large">Fale Conosco</Button>
               </div>
             </div>
           </div>
@@ -180,15 +182,15 @@ export const Products = () => {
                 </tr>
                 <tr className="border-b border-[var(--border-color)]" style={{ background: 'rgba(30, 30, 47, 0.7)' }}>
                   <td className="py-4 px-6 font-medium text-[var(--text-light)]">Bateria</td>
-                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">Bateria de backup de 1000mAh (até 48h)</td>
+                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">Bateria 1.200 mAh a 4.500 mAh</td>
                 </tr>
                 <tr className="border-b border-[var(--border-color)]" style={{ background: 'rgba(30, 30, 47, 0.5)' }}>
                   <td className="py-4 px-6 font-medium text-[var(--text-light)]">Conectividade</td>
-                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">4G LTE / GSM / GPRS</td>
+                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">4G LTE / GSM / GNSS / BDS/Glonass</td>
                 </tr>
                 <tr className="border-b border-[var(--border-color)]" style={{ background: 'rgba(30, 30, 47, 0.7)' }}>
                   <td className="py-4 px-6 font-medium text-[var(--text-light)]">Precisão GPS</td>
-                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">Até 2.5 metros</td>
+                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">Até 2 a 10 metros</td>
                 </tr>
                 <tr className="border-b border-[var(--border-color)]" style={{ background: 'rgba(30, 30, 47, 0.5)' }}>
                   <td className="py-4 px-6 font-medium text-[var(--text-light)]">Resistência</td>
@@ -196,7 +198,7 @@ export const Products = () => {
                 </tr>
                 <tr className="border-b border-[var(--border-color)]" style={{ background: 'rgba(30, 30, 47, 0.7)' }}>
                   <td className="py-4 px-6 font-medium text-[var(--text-light)]">Temperatura de Operação</td>
-                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">-20°C a 60°C</td>
+                  <td className="py-4 px-6 text-[var(--text-light-secondary)]">– 20°C até 70°C</td>
                 </tr>
                 <tr style={{ background: 'rgba(30, 30, 47, 0.5)' }}>
                   <td className="py-4 px-6 font-medium text-[var(--text-light)]">Garantia</td>

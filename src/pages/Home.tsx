@@ -66,8 +66,8 @@ export const Home = () => {
           <p className="text-xl mb-8 max-w-xl">
             Soluções inteligentes em rastreamento com tecnologia de ponta, segurança e total confiabilidade.
           </p>
-          <Button variant="primary" size="large">
-            Conheça Nossos Produtos
+          <Button variant="primary" size="large" onClick={directWhatsapp}>
+            Conheça Nosso Produto
           </Button>
         </div>
       </section>
@@ -85,7 +85,7 @@ export const Home = () => {
             <TechnologyCard
               titulo="GPS Avançado"
               descricao="Localização precisa em tempo real com tecnologia GPS 4G de última geração, garantindo transmissão rápida e estabilidade."
-              link="/produtos"
+              link="#/produtos"
               icone={
                 <svg
                   className="w-8 h-8"
@@ -108,7 +108,7 @@ export const Home = () => {
             <TechnologyCard
               titulo="Posicionamento Triplo"
               descricao="GPS + GNSS + BDS/Glonass. Combina GPS com sistemas globais como GLONASS, BDS e outros. Oferecendo precisão de 2 a 10 metros"
-              link="/produtos"
+              link="#/produtos"
               icone={
                 <svg
                   className="w-8 h-8"
@@ -137,7 +137,7 @@ export const Home = () => {
             <TechnologyCard
               titulo="Bloqueio Remoto"
               descricao="Corte remoto de ignição ou combustível. Permite bloquear o veículo à distância por meio de relés elétricos."
-              link="/produtos"
+              link="#/produtos"
               icone={
                 <svg
                   className="w-8 h-8"
@@ -233,7 +233,7 @@ export const Home = () => {
                         <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                         </svg>
-                        Bloqueio remoto do veículo / bem
+                        Bloqueio remoto do veículo
                       </li>
                       <li className="flex items-center">
                         <svg className="w-5 h-5 mr-2 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -260,7 +260,7 @@ export const Home = () => {
                         Robustez e certificações
                       </li>
                     </ul>
-                    <Button variant="primary">Ver Detalhes</Button>
+                    <Button variant="primary" onClick={goNavigation}>Ver Detalhes</Button>
                   </div>
                 </div>
               </div>
