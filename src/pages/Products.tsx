@@ -3,7 +3,7 @@ import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import Button from '../components/ui/Button';
 import { COMPANY_INFO } from '../lib/constants';
-import ProductCard from '@/components/ui/ProductCard';
+
 
 export const Products = () => {
 
