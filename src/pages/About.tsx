@@ -58,9 +58,9 @@ export const About = () => {
               </h2>
               <div className="w-20 h-1 bg-[var(--primary)] mb-6" style={{ boxShadow: 'var(--box-shadow)' }}></div>
               <p className="text-[var(--text-light-secondary)] mb-4">
-                A Value Sat é uma empresa especializada em rastreamento, comprometida com a segurança e tranquilidade dos nossos clientes. 
-                Atuamos com tecnologia de ponta para oferecer soluções eficazes e acessíveis para todos os tipos de veículos: 
-                carros, motos e bicicletas elétricas a jet skis, canoas e embarcações.
+              Na Value Sat, cuidar do que é seu é o que nos move.
+                Oferecemos rastreamento com tecnologia de ponta para todos os tipos de veículos — de motos e carros a jet skis e embarcações. 
+                Mais do que localização, entregamos tranquilidade e confiança todos os dias.
               </p>
               <p className="text-[var(--text-light-secondary)] mb-4">
                 Com experiência no mercado, desenvolvemos tecnologias avançadas que permitem 

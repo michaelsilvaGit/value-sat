@@ -69,8 +69,8 @@ export const NAVIGATION_LINKS = [
 export const COMPANY_INFO = {
   name: 'RastreAuto',
   slogan: 'Rastreamento veicular moderno e eficiente',
-  description: 'Segurança e tecnologia para seu veículo, com monitoramento em tempo real e alertas instantâneos.',
-  phone: '(11) 9999-9999',
+  description: 'Soluções inteligentes em rastreamento com tecnologia de ponta, segurança e total confiabilidade.',
+  phone: '(62) 9 9110-9602',
   email: 'contato@rastreauto.com.br',
   address: 'Av. Ipanema, nº 1855 - Quadra 92 Lote 12',
   socialMedia: {
@@ -80,7 +80,7 @@ export const COMPANY_INFO = {
   },
   copyright: `© ${new Date().getFullYear()} Value Sat. Todos os direitos reservados.`,
   whatsapp: {
-    fone: '5562991856139',
+    fone: '5562991109602',
     message: 'Olá! Gostaria de mais informações sobre o ratreador.'
   }
 };

@@ -58,22 +58,24 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="#/produtos" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
-                  Rastreamento Veicular
+                Carro
                 </a>
               </li>
               <li>
                 <a href="#/produtos" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
-                  Monitoramento 24h
+                Moto
+
                 </a>
               </li>
               <li>
                 <a href="#/produtos" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
-                  Bloqueio Remoto
+                Caminhão
+
                 </a>
               </li>
               <li>
                 <a href="#/produtos" className="text-[var(--text-light-secondary)] hover:text-[var(--primary)] transition-colors">
-                  Gestão de Frotas
+                Embarcações
                 </a>
               </li>
             </ul>

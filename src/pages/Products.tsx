@@ -95,7 +95,7 @@ export const Products = () => {
               <div className="mb-6">
                 <div className="flex items-center">
                   <span className="text-[var(--primary)] mr-2" style={{ textShadow: 'var(--neon-glow-text)' }}>A partir</span>
-                  <span className="text-[var(--text-price)] font-bold text-3xl" style={{ textShadow: 'var(--text-price-neon)' }}>R$ 39,00</span>
+                  <span className="text-[var(--text-price)] font-bold text-3xl" style={{ textShadow: 'var(--text-price-neon)' }}>R$ 39,90</span>
                 </div>
               </div>
               
